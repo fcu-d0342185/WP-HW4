@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Exercise2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("button.fir").click(function(){
+        $("p:first").hide();
+      })
+
+      $("button.sec").click(function(){
+        $("#sec").hide();
+      })
+
+      $("button.thr").click(function(){
+        $("p.thr").hide();
+      })
+    });
+  </script>
+</head>
+<body>
+  <h1>Web Programming</h1>
+  <p>Hide Paragraph 1</p>
+  <p id="sec">Hide Paragraph 2</p>
+  <p class="thr">Hide Paragraph 3</p>
+  <button class="fir">Hide P1</button>
+  <button class="sec">Hide P2</button>
+  <button class="thr">Hide P3</button>
+</body>
+</html>

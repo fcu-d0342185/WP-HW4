@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Exercise3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("button.fadein").click(function(){
+        $("img").fadeIn(2500);
+      })
+
+      $("button.fadeout").click(function(){
+        $("img").fadeOut(2500);
+      })
+      $("button.fadetoggle").click(function(){
+        $("img").fadeToggle(2500);
+      })
+      $("button.fadeto").click(function(){
+        $("img").fadeTo(2500,0.5);
+      })
+      $("button.fadetore").click(function(){
+        $("img").fadeTo(2500,1);
+      })
+      $("button.slidedown").click(function(){
+        $("img").slideDown(2500);
+      })
+      $("button.slideup").click(function(){
+        $("img").slideUp(2500);
+      })
+      $("button.slidetoggle").click(function(){
+        $("img").slideToggle(2500);
+      })
+      $("button.animate").click(function(){
+        $("div.one").animate({height: '350px'}, 2500);
+        $("div.one").animate({width: '350px'}, 2500);
+        $("div.one").animate({height: '484px'}, 2500);
+        $("div.one").animate({width: '484px'}, 2500);
+      })
+      $("button.stop").click(function(){
+        $("img").stop();
+      })
+    })
+  </script>
+  </script>
+</head>
+<body>
+  <div class="one" style="width:484px;height:484px;margin:0px auto;">
+    <img src="http://i.imgur.com/OYtuXcd.jpg">
+  </div>
+  <hr>
+  <div class="two" align="center">
+    <button class="fadein">FadeIn</button>
+    <button class="fadeout">FadeOut</button>
+    <button class="fadetoggle">FadeToggle</button>
+    <button class="fadeto">FadeTo</button>
+    <button class="fadetore">Reset FadeTo</button>
+    <button class="slidedown">SlideDown</button>
+    <button class="slideup">SlideUp</button>
+    <button class="slidetoggle">SlideToggle</button>
+    <button class="stop">Stop</button>
+    |
+    <button class="animate">Animate</button>
+  </div>
+</body>
+</html>
